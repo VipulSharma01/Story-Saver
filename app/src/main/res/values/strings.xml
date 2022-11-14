@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Story Saver</string>
+    <string name="share_chat">Share Chat</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="facebook">Facebook</string>
+    <string name="download_facebook_status">Download Facebook Status</string>
+    <string name="download_sharechat_videos">Download ShareChat Videos</string>
+    <string name="download_whatsapp_status">Download whatsapp Status</string>
+    <string name="about">About</string>
+    <string name="know_more_about_us">Know More About Us</string>
+    <string name="instagram">Instagram</string>
+    <string name="download_instagram_reels_and_videos">Download Instagram Reels And Videos</string>
+    <string name="share_app">Share App</string>
+</resources>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f7fc"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/logo01" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_below="@+id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rel"
+                android:padding="12dp"
+                android:orientation="vertical">
+                
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="3dp">
+                    <ImageView
+                        android:id="@+id/sharechat_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/sharechat"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/sharechat_logo"
+                        android:layout_toStartOf="@+id/sharechat_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/share_chat"
+                            android:layout_marginStart="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/download_sharechat_videos"
+                            android:layout_marginStart="12dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimaryDark"
+                          />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/sharechat_arrow"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="3dp">
+                    <ImageView
+                        android:id="@+id/whatsapp_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/whatsapp_logo"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/whatsapp_logo"
+                        android:layout_toStartOf="@+id/whatsapp_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/whatsapp"
+                            android:layout_marginStart="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/download_whatsapp_status"
+                            android:layout_marginStart="12dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/whatsapp_arrow"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="3dp">
+                    <ImageView
+                        android:id="@+id/facebook_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fb"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/facebook_logo"
+                        android:layout_toStartOf="@+id/fb_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/facebook"
+                            android:layout_marginStart="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/download_facebook_status"
+                            android:layout_marginStart="12dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/fb_arrow"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="3dp">
+                    <ImageView
+                        android:id="@+id/insta_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/insta_logo"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/insta_logo"
+                        android:layout_toStartOf="@+id/insta_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/instagram"
+                            android:layout_marginStart="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/download_instagram_reels_and_videos"
+                            android:layout_marginStart="12dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/insta_arrow"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="3dp">
+                    <ImageView
+                        android:id="@+id/Share_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_share"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/Share_logo"
+                        android:layout_toStartOf="@+id/share_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/share_app"
+                            android:layout_marginStart="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/download_facebook_status"
+                            android:layout_marginStart="12dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/share_arrow"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/rectangle"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="3dp">
+                    <ImageView
+                        android:id="@+id/About_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_about"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        tools:ignore="ContentDescription" />
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/About_logo"
+                        android:layout_toStartOf="@+id/about_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/about"
+                            android:layout_marginStart="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/know_more_about_us"
+                            android:layout_marginStart="12dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_arrow"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/about_arrow"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+</layout>
